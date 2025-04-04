@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hospitality.hospitalityScanner">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/HospitalityToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/Light_Cream"
+        android:title="Sign In Page"
+        android:titleTextColor="@color/dark_brown"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        tools:layout_editor_absoluteX="-96dp" />
+    <FrameLayout
+        android:id="@+id/cameraFrame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/Light_Cream"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/HospitalityToolbar">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.camera.view.PreviewView
+                android:id="@+id/PreviewCameraScanner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+
+                android:scaleType="fitCenter"/>
+            <View
+                android:id="@+id/overlay"
+                android:layout_marginTop="120dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/scanner_overlay"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/FlashLight"
+                android:src="@drawable/baseline_flashlight_on_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@+id/PreviewCameraScanner"/>
+            <View
+                android:id="@+id/scanningLine"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginEnd="55dp"
+                android:backgroundTint="@color/Light_Cream"
+                android:background="@drawable/scanner_overlay"
+                app:layout_constraintStart_toStartOf="@+id/PreviewCameraScanner"
+                app:layout_constraintEnd_toEndOf="@+id/PreviewCameraScanner"
+                app:layout_constraintTop_toTopOf="@+id/PreviewCameraScanner" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+    <ProgressBar
+        android:id="@+id/ScanprogressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:backgroundTint="@color/Light_brownText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

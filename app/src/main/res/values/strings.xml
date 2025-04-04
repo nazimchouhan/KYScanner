@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KYScanner</string>
+    <string name="jwt_secret">meowmeowmeowmeowmeowmeowmeowmeow</string>
+    <string name="Invalid_User">User Not Found</string>
+</resources>

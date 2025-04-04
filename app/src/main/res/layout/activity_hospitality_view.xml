@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Light_Cream"
+    tools:context=".hospitality.hospitalityView">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/HospitalityViewToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/Light_Cream"
+        android:title="Sign In Page"
+        android:titleTextColor="@color/dark_brown"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        tools:layout_editor_absoluteX="-96dp"/>
+
+    <!-- ScrollView to enable scrolling -->
+    <ScrollView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/HospitalityViewToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hospitalitycardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/Light_Cream"
+            android:background="@drawable/editbox_background"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="12dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <!-- User Details -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/editbox_background"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Name"/>
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textStyle="normal"
+                        android:textSize="20sp"
+                        android:text="UserName"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+
+                <!-- KYID -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="10dp"
+                    android:background="@drawable/editbox_background"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="KYID"/>
+
+                    <TextView
+                        android:id="@+id/KYID"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textStyle="normal"
+                        android:textSize="20sp"
+                        android:text="KY1167"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+
+                <!-- College -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/editbox_background"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="College"/>
+
+                    <TextView
+                        android:id="@+id/College"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textStyle="normal"
+                        android:textSize="20sp"
+                        android:text="XYZ University"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+
+                <!-- Mobile Number -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/editbox_background"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Mobile No"/>
+
+                    <TextView
+                        android:id="@+id/MobileNo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textStyle="normal"
+                        android:textSize="20sp"
+                        android:text="9876543210"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+
+                <!-- Gmail -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/editbox_background"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Gmail"/>
+
+                    <TextView
+                        android:id="@+id/gmail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textStyle="normal"
+                        android:textSize="20sp"
+                        android:text="user@gmail.com"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+
+                <!-- Accommodation, Food, T-shirt, MultiEvent -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/editbox_background"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Food"/>
+
+                    <TextView
+                        android:id="@+id/foodStatus"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textStyle="normal"
+                        android:textSize="20sp"
+                        android:text="Yes"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/editbox_background"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Accomodation"/>
+
+                    <TextView
+                        android:id="@+id/AccomodationStatus"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textStyle="normal"
+                        android:textSize="20sp"
+                        android:text="Yes"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/editbox_background"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Tshirt"/>
+
+                    <TextView
+                        android:id="@+id/TshirtStatus"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textStyle="normal"
+                        android:textSize="20sp"
+                        android:text="Yes"/>
+                </LinearLayout>
+
+                <!-- More fields like Has Accommodation, Has T-shirt, Has MultiEvent can be added similarly -->
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

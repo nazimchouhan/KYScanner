@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Light_Cream"
+    tools:context=".Events.CrossWindz">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/EventToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/Light_Cream"
+        android:title="SubEvent Page"
+        android:titleTextColor="@color/dark_brown"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toBottomOf="@id/EventToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/Light_Cream"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <Button
+                android:id="@+id/BattleOfBands"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editbox_background"
+                android:backgroundTint="@color/Light_Cream"
+                android:padding="10dp"
+                android:text="Battle of Bands"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/Strumento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editbox_background"
+                android:backgroundTint="@color/Light_Cream"
+                android:padding="10dp"
+                android:text="Strumento"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/Auralis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editbox_background"
+                android:backgroundTint="@color/Light_Cream"
+                android:padding="10dp"
+                android:text="Auralis"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/Spitfire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editbox_background"
+                android:backgroundTint="@color/Light_Cream"
+                android:padding="10dp"
+                android:text="Spitfire"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/BoxBlitz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editbox_background"
+                android:backgroundTint="@color/Light_Cream"
+                android:padding="10dp"
+                android:text="Box-Blitz"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

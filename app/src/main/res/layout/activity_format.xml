@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/Light_Cream"
+    tools:context=".mainclasses.Format">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/MainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/Light_Cream"
+        android:title="User Detail"
+        android:titleTextColor="@color/dark_brown"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:id="@+id/cameraFrame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/Light_Cream"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/MainToolbar">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/MainToolbar"
+            android:backgroundTint="@color/Light_Cream"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/editbox_background"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="12dp"
+            app:cardUseCompatPadding="true">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_horizontal">
+
+                <!-- Profile Picture -->
+                <!-- User's Name -->
+                <TextView
+                    android:id="@+id/BoysSecurity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="Boys Security"
+                    android:background="@drawable/editbox_background"
+                    android:textColor="@color/Light_brownText"
+                    android:textSize="30sp"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeMaxTextSize="30sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:padding="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside" />
+                <TextView
+                    android:id="@+id/GirlsSecurity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="Girls Security"
+                    android:background="@drawable/editbox_background"
+                    android:textColor="@color/Light_brownText"
+                    android:textSize="30sp"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeMaxTextSize="30sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:padding="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/BoysSecurity"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside" />
+                <TextView
+                    android:id="@+id/Hospitality"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:textStyle="bold"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:ellipsize="end"
+                    android:background="@drawable/editbox_background"
+                    android:text="HOSPITALITY"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeMaxTextSize="30sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:maxLines="1"
+                    android:textColor="@color/Light_brownText"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/GirlsSecurity"
+                    app:layout_constraintEnd_toEndOf="parent" />
+                <TextView
+                    android:id="@+id/Event"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/editbox_background"
+                    android:layout_margin="16dp"
+                    android:textStyle="bold"
+                    android:padding="20dp"
+                    android:ellipsize="end"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeMaxTextSize="30sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:text="EVENT"
+                    android:textColor="@color/Light_brownText"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Hospitality"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

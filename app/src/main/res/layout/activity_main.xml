@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Light_Cream"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainclasses.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/LoginToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/Light_Cream"
+        android:title="Sign In Page"
+        app:cardElevation="8dp"
+        android:titleTextColor="@color/dark_brown"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LoginToolbar"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/Light_Cream"
+        android:background="@drawable/editbox_background"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="12dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/loginText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Login"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_brown"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="16dp"
+                app:layout_goneMarginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/LoginEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Email"
+                android:padding="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/loginText"
+                android:background="@android:drawable/editbox_background"
+                android:textColor="@color/dark_brown"
+                android:textColorHint="@color/Light_brownText"/>
+
+            <EditText
+                android:id="@+id/LoginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:padding="12dp"
+                app:layout_constraintStart_toStartOf="@id/LoginEmail"
+                app:layout_constraintEnd_toEndOf="@id/LoginEmail"
+                app:layout_constraintTop_toBottomOf="@id/LoginEmail"
+                android:background="@android:drawable/editbox_background"
+                android:textColor="@color/dark_brown"
+                android:textColorHint="@color/Light_brownText"
+                android:inputType="textPassword"
+                android:layout_marginTop="12dp"/>
+
+            <Button
+                android:id="@+id/LoginButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Log in"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/LoginPassword"
+                app:layout_constraintStart_toStartOf="@id/LoginEmail"
+                app:layout_constraintEnd_toEndOf="@id/LoginEmail"
+                android:backgroundTint="#33100e"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/userSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size"
+        android:textSize="32sp"
+        android:padding="8dp"
+        android:background="@drawable/editbox_background"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cardview"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

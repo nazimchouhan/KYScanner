@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_logout"
+        android:iconTint="@color/Light_brownText"
+        app:showAsAction="always|withText"
+        android:checkable="true"
+        android:checked="true"
+        android:tint="@color/white"
+        android:title="Logout"/>
+    <item
+        android:id="@+id/action_status"
+        android:iconTint="@color/Light_brownText"
+        app:showAsAction="always|withText"
+        android:checkable="true"
+        android:checked="true"
+        android:tint="@color/white"
+        android:title="Refresh"/>
+</menu>

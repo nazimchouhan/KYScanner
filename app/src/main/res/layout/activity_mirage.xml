@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Light_Cream"
+    tools:context=".Events.Mirage">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/EventToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/Light_Cream"
+        android:title="SubEvent Page"
+        android:titleTextColor="@color/dark_brown"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toBottomOf="@id/EventToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/Light_Cream"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <Button
+                android:id="@+id/MrKY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editbox_background"
+                android:backgroundTint="@color/Light_Cream"
+                android:padding="10dp"
+                android:text="Mr KY"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/MissKY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editbox_background"
+                android:backgroundTint="@color/Light_Cream"
+                android:padding="10dp"
+                android:text="Miss KY"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/CostumeDesign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editbox_background"
+                android:backgroundTint="@color/Light_Cream"
+                android:padding="10dp"
+                android:text="CosPlay"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/DesignElegante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editbox_background"
+                android:backgroundTint="@color/Light_Cream"
+                android:padding="10dp"
+                android:text="Design Elegante"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

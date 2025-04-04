@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Full-screen Transparent Background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#99000000"/> <!-- 60% Transparent Black -->
+        </shape>
+    </item>
+
+    <!-- Transparent Cutout for Scanner Frame -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+            <stroke android:width="4dp" android:color="@android:color/white"/>
+            <corners android:radius="14dp"/>
+        </shape>
+        <padding android:left="50dp" android:right="50dp" android:top="200dp" android:bottom="400dp"/>
+    </item>
+</layer-list>

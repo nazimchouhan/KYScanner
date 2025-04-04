@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Light_Cream"
+    tools:context=".Events.Toolika">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/EventToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/Light_Cream"
+        android:title="Sub Event Page"
+        android:titleTextColor="@color/dark_brown"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toBottomOf="@id/EventToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/Light_Cream"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <Button
+                android:id="@+id/LiveSketching"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editbox_background"
+                android:backgroundTint="@color/Light_Cream"
+                android:padding="10dp"
+                android:text="Live Sketching"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/SoapCarving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editbox_background"
+                android:backgroundTint="@color/Light_Cream"
+                android:padding="10dp"
+                android:text="Soap Carving"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/RapidFire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editbox_background"
+                android:backgroundTint="@color/Light_Cream"
+                android:padding="10dp"
+                android:text="Rapid Fire"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/InkIt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editbox_background"
+                android:backgroundTint="@color/Light_Cream"
+                android:padding="10dp"
+                android:text="Ink It"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/Rangriti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editbox_background"
+                android:backgroundTint="@color/Light_Cream"
+                android:padding="10dp"
+                android:text="Rangriti"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/VastraShilp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editbox_background"
+                android:backgroundTint="@color/Light_Cream"
+                android:padding="10dp"
+                android:text="Vastra Shilp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/FacePainting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+
+                android:background="@drawable/editbox_background"
+                android:backgroundTint="@color/Light_Cream"
+                android:padding="10dp"
+                android:text="Face Painting"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/SpoiltheTees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editbox_background"
+                android:backgroundTint="@color/Light_Cream"
+                android:baselineAligned="false"
+                android:padding="10dp"
+                android:text="Spoil the Tees"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/AetherandAsh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editbox_background"
+                android:backgroundTint="@color/Light_Cream"
+                android:baselineAligned="false"
+                android:padding="10dp"
+                android:text="Aether and Ash"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

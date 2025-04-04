@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".security.AppWorker"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KYScanner"
+        tools:targetApi="31">
+        <activity
+            android:name=".security.DataFetchSuccessFully"
+            android:exported="false" />
+        <activity
+            android:name=".Events.TeamInfo"
+            android:exported="false" />
+        <activity
+            android:name=".Events.EventInvalidUser"
+            android:exported="false" />
+        <activity
+            android:name=".Events.EventRequestInfo"
+            android:exported="false" />
+        <activity
+            android:name=".Events.EventScanner"
+            android:exported="false" />
+        <activity
+            android:name=".Events.Toolika"
+            android:exported="false" />
+        <activity
+            android:name=".Events.Samwaad"
+            android:exported="false" />
+        <activity
+            android:name=".Events.Natraj"
+            android:exported="false" />
+        <activity
+            android:name=".Events.Mirage"
+            android:exported="false" />
+        <activity
+            android:name=".Events.Enquizta"
+            android:exported="false" />
+        <activity
+            android:name=".Events.CrossWindz"
+            android:exported="false" />
+        <activity
+            android:name=".Events.Bandish"
+            android:exported="false" />
+        <activity
+            android:name=".Events.AbhinayList"
+            android:exported="false" />
+        <activity
+            android:name=".Events.EventList"
+            android:exported="false" />
+        <activity
+            android:name=".hospitality.InvalidHospitalityUser"
+            android:exported="false" />
+        <activity
+            android:name=".mainclasses.Format"
+            android:exported="false" />
+        <activity
+            android:name=".hospitality.hospitalityScanner"
+            android:exported="false" />
+        <activity
+            android:name=".hospitality.hospitalityView"
+            android:exported="false" />
+        <activity
+            android:name=".mainclasses.Status"
+            android:exported="false" />
+        <activity
+            android:name=".mainclasses.InvalidUser"
+            android:exported="false" />
+        <activity
+            android:name=".mainclasses.Success"
+            android:exported="false" />
+        <activity
+            android:name=".mainclasses.CodeScanner"
+            android:exported="false" />
+        <activity
+            android:name=".mainclasses.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
